@@ -21,7 +21,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : 'https://hippocampus-plongee.vercel.app'),
+  metadataBase: new URL('https://hippocampus-plongee.vercel.app'),
   title: {
     default: 'HIPPOCAMPUS | Club de Plongée Sous-Marine — Sissonne',
     template: '%s | HIPPOCAMPUS'
