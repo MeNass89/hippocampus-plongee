@@ -46,7 +46,7 @@ export default function WaterBackground() {
     window.addEventListener('mouseleave', onMouseLeave)
 
     const isMobile = window.innerWidth < 768
-    const alphaMultiplier = isMobile ? 1.5 : 2.5
+    const alphaMultiplier = isMobile ? 2 : 2.5
 
     // Additional pixel-level downsampling for the caustic computation
     const scale = isMobile ? 3 : 2
