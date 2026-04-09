@@ -193,7 +193,7 @@ export function ContactForm() {
   }
 
   return (
-    <section id="contact" className="px-6 md:px-12 lg:px-24 py-24 md:py-32 relative overflow-hidden" style={{ backgroundColor: 'rgba(10, 21, 32, 0.85)' }}>
+    <section id="contact" className="px-6 md:px-12 lg:px-24 py-16 md:py-32 relative overflow-hidden" style={{ backgroundColor: 'rgba(10, 21, 32, 0.85)' }}>
       {/* Decorative blurs */}
       <div className="absolute -top-24 -right-24 w-72 h-72 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -bottom-32 -left-32 w-64 h-64 bg-primary/5 rounded-full blur-3xl pointer-events-none" />

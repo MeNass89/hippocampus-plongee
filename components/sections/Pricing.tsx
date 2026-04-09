@@ -11,7 +11,7 @@ const CheckIcon = () => (
 
 export function Pricing() {
   return (
-    <section className="py-24 md:py-32 relative overflow-hidden" style={{ backgroundColor: 'rgba(4, 14, 26, 0.85)' }}>
+    <section className="py-16 md:py-32 relative overflow-hidden" style={{ backgroundColor: 'rgba(4, 14, 26, 0.85)' }}>
       {/* Decorative blur circle */}
       <div className="absolute -top-32 -right-32 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
 

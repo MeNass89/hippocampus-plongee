@@ -31,7 +31,7 @@ const VALUES = [
 
 export function Values() {
   return (
-    <section className="py-24 md:py-32" style={{ backgroundColor: 'rgba(2, 10, 20, 0.85)' }}>
+    <section className="py-16 md:py-32" style={{ backgroundColor: 'rgba(2, 10, 20, 0.85)' }}>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section heading */}
         <ScrollReveal animation="fade-up">

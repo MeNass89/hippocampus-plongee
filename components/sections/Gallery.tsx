@@ -126,12 +126,12 @@ export function Gallery() {
   const currentItem = GALLERY_ITEMS[currentIndex];
 
   return (
-    <section id="galerie" className="py-24 md:py-32 overflow-hidden relative border-t border-on-surface/[0.06]" style={{ backgroundColor: 'rgba(2, 10, 20, 0.85)' }}>
+    <section id="galerie" className="py-16 md:py-32 overflow-hidden relative border-t border-on-surface/[0.06]" style={{ backgroundColor: 'rgba(2, 10, 20, 0.85)' }}>
       {/* Decorative blur */}
       <div className="absolute top-1/3 -left-24 w-64 h-64 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
 
       {/* Section title */}
-      <div className="max-w-7xl mx-auto px-6 md:px-12 mb-16">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 mb-10 md:mb-16">
         <ScrollReveal animation="fade-up">
           <SectionTitle
             overline="Nos Aventures"
@@ -162,7 +162,7 @@ export function Gallery() {
               <div
                 key={i}
                 className="flex-shrink-0 snap-center"
-                style={{ width: "clamp(280px, 40vw, 500px)" }}
+                style={{ width: "clamp(260px, 70vw, 500px)" }}
               >
                 {/* Card-in-card frame */}
                 <div className="card-frame">
@@ -220,7 +220,7 @@ export function Gallery() {
         <button
           type="button"
           onClick={() => scrollBy("left")}
-          className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-surface/80 backdrop-blur-sm flex items-center justify-center text-on-surface hover:bg-primary/20 transition-colors duration-300 active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+          className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-surface/80 backdrop-blur-sm hidden md:flex items-center justify-center text-on-surface hover:bg-primary/20 transition-colors duration-300 active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           aria-label="Défiler à gauche"
         >
           <svg className="w-5 h-5" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5">

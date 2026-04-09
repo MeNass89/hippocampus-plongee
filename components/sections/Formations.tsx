@@ -27,8 +27,8 @@ const TRAINING_LEVELS = [
 
 export function Formations() {
   return (
-    <section id="formations" className="py-24 md:py-32 px-6 md:px-12 lg:px-24 border-t border-on-surface/[0.06]" style={{ backgroundColor: 'rgba(2, 10, 20, 0.85)' }}>
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <section id="formations" className="py-16 md:py-32 px-6 md:px-12 lg:px-24 border-t border-on-surface/[0.06]" style={{ backgroundColor: 'rgba(2, 10, 20, 0.85)' }}>
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
         {/* Left — Image placeholder */}
         <ScrollReveal animation="fade-right">
           <div className="relative">

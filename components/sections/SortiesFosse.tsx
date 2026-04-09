@@ -10,10 +10,10 @@ const BULLET_POINTS = [
 
 export function SortiesFosse() {
   return (
-    <section className="py-24 md:py-32 px-6 md:px-12 lg:px-24 relative overflow-hidden border-t border-on-surface/[0.06]" style={{ backgroundColor: 'rgba(4, 14, 26, 0.85)' }}>
+    <section className="py-16 md:py-32 px-6 md:px-12 lg:px-24 relative overflow-hidden border-t border-on-surface/[0.06]" style={{ backgroundColor: 'rgba(4, 14, 26, 0.85)' }}>
       {/* Decorative blur */}
       <div className="absolute -bottom-24 -right-24 w-80 h-80 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
-      <div className="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div className="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
         {/* Left — Text */}
         <div>
           <ScrollReveal animation="fade-up">

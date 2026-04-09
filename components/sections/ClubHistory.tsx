@@ -2,9 +2,9 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 
 export function ClubHistory() {
   return (
-    <section className="py-24 md:py-32" style={{ backgroundColor: 'rgba(10, 21, 32, 0.85)' }}>
+    <section className="py-16 md:py-32" style={{ backgroundColor: 'rgba(10, 21, 32, 0.85)' }}>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Left column — Image in card-frame */}
           <ScrollReveal animation="fade-up">
             <div className="card-frame">

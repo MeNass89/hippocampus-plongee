@@ -4,7 +4,7 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 export function CTASection() {
   return (
     <section
-      className="py-24 md:py-32 px-6 md:px-12 lg:px-24 relative overflow-hidden border-t border-on-surface/[0.06]"
+      className="py-16 md:py-32 px-6 md:px-12 lg:px-24 relative overflow-hidden border-t border-on-surface/[0.06]"
       style={{ backgroundColor: 'rgba(4, 14, 26, 0.85)' }}
     >
       {/* Decorative blur */}

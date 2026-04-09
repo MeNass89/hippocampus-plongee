@@ -27,7 +27,7 @@ const INSTRUCTORS: TeamMember[] = [
 
 export function Team() {
   return (
-    <section className="py-24 md:py-32" style={{ backgroundColor: 'rgba(4, 14, 26, 0.85)' }}>
+    <section className="py-16 md:py-32" style={{ backgroundColor: 'rgba(4, 14, 26, 0.85)' }}>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Title */}
         <ScrollReveal animation="fade-up">

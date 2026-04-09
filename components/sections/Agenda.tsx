@@ -5,7 +5,7 @@ import SectionTitle from "@/components/ui/SectionTitle";
 
 export function Agenda() {
   return (
-    <section id="agenda" className="py-24 md:py-32 border-t border-on-surface/[0.06]" style={{ backgroundColor: 'rgba(4, 14, 26, 0.92)' }}>
+    <section id="agenda" className="py-16 md:py-32 border-t border-on-surface/[0.06]" style={{ backgroundColor: 'rgba(4, 14, 26, 0.92)' }}>
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <ScrollReveal animation="fade-up">
           <SectionTitle overline="Prochainement" title="Agenda" />

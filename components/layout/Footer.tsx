@@ -9,10 +9,10 @@ const FOOTER_NAV = [
 
 export default function Footer() {
   return (
-    <footer className="relative z-10 py-16 md:py-24 px-6 md:px-12" style={{ backgroundColor: 'rgba(2, 10, 20, 0.92)' }}>
+    <footer className="relative z-10 py-12 md:py-24 px-6 md:px-12" style={{ backgroundColor: 'rgba(2, 10, 20, 0.92)' }}>
       <div className="max-w-7xl mx-auto">
         {/* 3-column grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
           {/* Column 1 — Brand */}
           <div>
             <div className="flex items-center gap-4">

@@ -14,7 +14,7 @@ const CHECKMARKS = [
 
 export function FFESSMAffiliation() {
   return (
-    <section className="py-24 md:py-32" style={{ backgroundColor: 'rgba(2, 10, 20, 0.85)' }}>
+    <section className="py-16 md:py-32" style={{ backgroundColor: 'rgba(2, 10, 20, 0.85)' }}>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Outer card-frame wrapper */}
         <div className="card-frame">
@@ -23,7 +23,7 @@ export function FFESSMAffiliation() {
             <div className="absolute -top-24 -right-24 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
             <div className="absolute -bottom-16 -left-16 w-48 h-48 bg-primary/5 rounded-full blur-3xl" />
 
-            <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
               {/* Left column */}
               <ScrollReveal animation="fade-up">
                 <div>

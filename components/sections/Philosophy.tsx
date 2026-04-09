@@ -2,11 +2,11 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 
 export function Philosophy() {
   return (
-    <section className="py-24 md:py-32 relative overflow-hidden border-t border-on-surface/[0.06]" style={{ backgroundColor: 'rgba(10, 21, 32, 0.85)' }}>
+    <section className="py-16 md:py-32 relative overflow-hidden border-t border-on-surface/[0.06]" style={{ backgroundColor: 'rgba(10, 21, 32, 0.85)' }}>
       {/* Decorative blur */}
       <div className="absolute -top-32 -left-32 w-72 h-72 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Left column — Text */}
           <ScrollReveal animation="fade-up">
             <div>

@@ -32,7 +32,7 @@ const VOYAGES = {
 
 export function Voyages() {
   return (
-    <section className="py-24 md:py-32 px-6 md:px-12 lg:px-24 relative overflow-hidden border-t border-on-surface/[0.06]" style={{ backgroundColor: 'rgba(2, 10, 20, 0.85)' }}>
+    <section className="py-16 md:py-32 px-6 md:px-12 lg:px-24 relative overflow-hidden border-t border-on-surface/[0.06]" style={{ backgroundColor: 'rgba(2, 10, 20, 0.85)' }}>
       {/* Decorative blur */}
       <div className="absolute -bottom-24 -right-24 w-72 h-72 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
       <div className="relative max-w-7xl mx-auto">
