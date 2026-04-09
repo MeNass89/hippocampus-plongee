@@ -46,6 +46,7 @@ export default function WaterBackground() {
     window.addEventListener('mouseleave', onMouseLeave)
 
     const isMobile = window.innerWidth < 768
+    const alphaMultiplier = isMobile ? 1.5 : 2.5
 
     // Additional pixel-level downsampling for the caustic computation
     const scale = isMobile ? 3 : 2
@@ -158,7 +159,7 @@ export default function WaterBackground() {
               data[idx] = 56 * brightness * 3         // R
               data[idx + 1] = 217 * brightness * 3    // G
               data[idx + 2] = 220 * brightness * 3    // B
-              data[idx + 3] = brightness * 255 * 2.5  // A
+              data[idx + 3] = brightness * 255 * alphaMultiplier  // A
             }
           }
         }
