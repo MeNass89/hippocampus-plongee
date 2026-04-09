@@ -230,7 +230,7 @@ export function Gallery() {
         <button
           type="button"
           onClick={() => scrollBy("right")}
-          className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-surface/80 backdrop-blur-sm flex items-center justify-center text-on-surface hover:bg-primary/20 transition-colors duration-300 active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+          className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-surface/80 backdrop-blur-sm hidden md:flex items-center justify-center text-on-surface hover:bg-primary/20 transition-colors duration-300 active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           aria-label="Défiler à droite"
         >
           <svg className="w-5 h-5" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -239,8 +239,8 @@ export function Gallery() {
         </button>
 
         {/* Fade edges */}
-        <div className="absolute left-0 top-0 bottom-0 w-24 pointer-events-none z-10" style={{ background: 'linear-gradient(to right, rgba(2, 10, 20, 0.85), transparent)' }} />
-        <div className="absolute right-0 top-0 bottom-0 w-24 pointer-events-none z-10" style={{ background: 'linear-gradient(to left, rgba(2, 10, 20, 0.85), transparent)' }} />
+        <div className="absolute left-0 top-0 bottom-0 w-12 md:w-24 pointer-events-none z-10" style={{ background: 'linear-gradient(to right, rgba(2, 10, 20, 0.85), transparent)' }} />
+        <div className="absolute right-0 top-0 bottom-0 w-12 md:w-24 pointer-events-none z-10" style={{ background: 'linear-gradient(to left, rgba(2, 10, 20, 0.85), transparent)' }} />
       </div>
 
       {/* Lightbox dialog */}
