@@ -38,7 +38,7 @@ export function Values() {
           <span className="inline-block rounded-full bg-primary/10 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-primary mb-4">
             Nos Valeurs
           </span>
-          <h2 className="font-headline text-4xl md:text-5xl font-light text-on-surface tracking-tight leading-[1.1] max-w-[22ch] mb-16">
+          <h2 className="font-headline text-4xl md:text-5xl font-light text-on-surface tracking-tight leading-[1.1] max-w-[22ch] mb-10 md:mb-16">
             Notre Philosophie
           </h2>
         </ScrollReveal>
@@ -47,7 +47,7 @@ export function Values() {
         <div>
           {VALUES.map((value, i) => (
             <ScrollReveal key={value.number} animation="fade-up" delay={i * 100}>
-              <div className="border-t border-on-surface/[0.06] py-10 md:py-14 transition-colors duration-500 ease-expo hover:bg-on-surface/[0.02]">
+              <div className="border-t border-on-surface/[0.06] py-8 md:py-14 transition-colors duration-500 ease-expo hover:bg-on-surface/[0.02]">
                 <div className="grid gap-6 md:grid-cols-12 md:items-center md:gap-10">
                   {/* Image */}
                   <div className="md:col-span-2 flex justify-center">
@@ -90,7 +90,7 @@ export function Values() {
         <ScrollReveal animation="fade-up" delay={100}>
           <div className="card-frame mt-20">
             <div
-              className="card-frame-inner px-8 py-16 md:px-16 md:py-20 text-center"
+              className="card-frame-inner px-6 py-12 md:px-16 md:py-20 text-center"
               style={{
                 background: "linear-gradient(145deg, rgba(14,25,37,1) 0%, rgba(4,14,26,1) 50%, rgba(0,83,84,0.15) 100%)",
               }}

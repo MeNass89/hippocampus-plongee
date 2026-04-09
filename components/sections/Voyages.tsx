@@ -42,7 +42,7 @@ export function Voyages() {
             title="Voyages & Explorations"
             description="De la Guadeloupe aux Maldives en passant par la Mer Rouge, nos voyages sont pensés pour les plongeurs avides de découverte."
             align="center"
-            className="mb-16"
+            className="mb-10 md:mb-16"
           />
         </ScrollReveal>
 
@@ -52,7 +52,7 @@ export function Voyages() {
           <ScrollReveal
             animation="fade-up"
             delay={100}
-            className="md:col-span-7 h-[400px] md:h-full"
+            className="md:col-span-7 h-[320px] md:h-full"
           >
             <div className="card-frame h-full">
               <div className="card-frame-inner h-full">

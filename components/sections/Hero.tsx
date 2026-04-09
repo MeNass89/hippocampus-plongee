@@ -157,7 +157,7 @@ function TextPanel({
       style={style}
     >
       <div
-        className="glass-panel pointer-events-auto max-w-[620px] rounded-[2rem] px-8 py-10 md:px-12 md:py-14 text-center"
+        className="glass-panel pointer-events-auto max-w-[620px] rounded-[1.5rem] md:rounded-[2rem] px-6 py-8 md:px-12 md:py-14 text-center"
         style={{
           backdropFilter: "blur(24px)",
           WebkitBackdropFilter: "blur(24px)",
@@ -178,7 +178,7 @@ function TextPanel({
         )}
 
         {/* Heading */}
-        <h2 className="mt-6 font-headline text-4xl font-bold leading-[1.05] tracking-[-0.03em] text-on-surface md:text-6xl lg:text-7xl">
+        <h2 className="mt-5 font-headline text-3xl font-bold leading-[1.05] tracking-[-0.03em] text-on-surface md:text-6xl lg:text-7xl">
           {panel.heading}
         </h2>
 

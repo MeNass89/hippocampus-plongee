@@ -34,7 +34,7 @@ export function Team() {
           <SectionTitle
             overline="L'&Eacute;quipe"
             title="Notre &Eacute;quipage"
-            className="mb-16"
+            className="mb-10 md:mb-16"
           />
         </ScrollReveal>
 
@@ -43,7 +43,7 @@ export function Team() {
           {INSTRUCTORS.map((member, i) => (
             <ScrollReveal key={member.name} animation="fade-up" delay={i * 100}>
               <div
-                className="border-t border-on-surface/[0.06] py-10 md:py-14 transition-colors duration-500 ease-expo hover:bg-on-surface/[0.02]"
+                className="border-t border-on-surface/[0.06] py-8 md:py-14 transition-colors duration-500 ease-expo hover:bg-on-surface/[0.02]"
               >
                 <div className="grid gap-6 md:grid-cols-12 md:items-center md:gap-10">
                   {/* Avatar */}
