@@ -11,7 +11,7 @@ export function Agenda() {
           <SectionTitle overline="Prochainement" title="Agenda" />
         </ScrollReveal>
 
-        <div className="mt-16">
+        <div className="mt-10 md:mt-16">
           {/* Empty state — elegant placeholder */}
           <ScrollReveal animation="fade-up" delay={200}>
             <div className="card-frame" style={{ borderRadius: '2rem' }}>

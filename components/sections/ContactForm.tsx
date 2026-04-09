@@ -201,8 +201,8 @@ export function ContactForm() {
         {/* Left column — Form in card-frame */}
         <ScrollReveal animation="fade-up" className="lg:col-span-7">
           <div className="card-frame h-full">
-            <div className="card-frame-inner bg-surface-container p-8 md:p-12 h-full">
-              <h2 className="font-headline text-3xl font-light text-on-surface mb-10 tracking-tight leading-tight">
+            <div className="card-frame-inner bg-surface-container p-6 md:p-12 h-full">
+              <h2 className="font-headline text-2xl md:text-3xl font-light text-on-surface mb-8 md:mb-10 tracking-tight leading-tight">
                 Message de Surface
               </h2>
 

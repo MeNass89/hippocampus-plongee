@@ -18,7 +18,7 @@ export function FFESSMAffiliation() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Outer card-frame wrapper */}
         <div className="card-frame">
-          <div className="card-frame-inner p-8 md:p-16 bg-surface-container-low relative">
+          <div className="card-frame-inner p-6 md:p-16 bg-surface-container-low relative">
             {/* Decorative blur circles */}
             <div className="absolute -top-24 -right-24 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
             <div className="absolute -bottom-16 -left-16 w-48 h-48 bg-primary/5 rounded-full blur-3xl" />
@@ -82,7 +82,7 @@ export function FFESSMAffiliation() {
                     <ScrollReveal key={stat.label} animation="fade-up" delay={100 + i * 80}>
                       <div className="card-frame">
                         <div className="card-frame-inner bg-surface-container p-6 md:p-8 flex flex-col items-center text-center">
-                          <p className="font-headline text-4xl font-light text-primary italic tracking-tight tabular-nums">
+                          <p className="font-headline text-3xl md:text-4xl font-light text-primary italic tracking-tight tabular-nums">
                             {stat.value}
                           </p>
                           <p className="text-[11px] font-label uppercase tracking-[0.2em] text-on-surface-variant/50 mt-2">

@@ -23,7 +23,7 @@ export function Pricing() {
             title="Rejoindre le Club"
             description="L'adh&eacute;sion donne acc&egrave;s aux entra&icirc;nements hebdomadaires, aux sorties club et au mat&eacute;riel en pr&ecirc;t."
             align="center"
-            className="mb-16"
+            className="mb-10 md:mb-16"
           />
         </ScrollReveal>
 

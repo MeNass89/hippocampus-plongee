@@ -53,9 +53,9 @@ export function ClubHistory() {
               </p>
 
               {/* Stats row — border-t divider above */}
-              <div className="flex gap-16 border-t border-on-surface/[0.06] pt-10">
+              <div className="flex gap-10 md:gap-16 border-t border-on-surface/[0.06] pt-8 md:pt-10">
                 <div>
-                  <p className="font-headline text-5xl font-light tracking-tight text-primary tabular-nums">
+                  <p className="font-headline text-4xl md:text-5xl font-light tracking-tight text-primary tabular-nums">
                     15+
                   </p>
                   <p className="text-[11px] font-label uppercase tracking-[0.2em] text-on-surface-variant/50 mt-2">
@@ -63,7 +63,7 @@ export function ClubHistory() {
                   </p>
                 </div>
                 <div>
-                  <p className="font-headline text-5xl font-light tracking-tight text-primary tabular-nums">
+                  <p className="font-headline text-4xl md:text-5xl font-light tracking-tight text-primary tabular-nums">
                     80+
                   </p>
                   <p className="text-[11px] font-label uppercase tracking-[0.2em] text-on-surface-variant/50 mt-2">
