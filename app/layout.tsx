@@ -1,0 +1,105 @@
+import type { Metadata } from "next";
+import { Noto_Serif, Manrope } from "next/font/google";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+import WaterBackground from "@/components/ui/WaterBackground";
+import "./globals.css";
+
+const notoSerif = Noto_Serif({
+  variable: "--font-headline",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+  display: "swap",
+});
+
+const manrope = Manrope({
+  variable: "--font-body",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "800"],
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  metadataBase: new URL('https://hippocampus-plongee.fr'),
+  title: {
+    default: 'HIPPOCAMPUS | Club de Plongée Sous-Marine — Sissonne',
+    template: '%s | HIPPOCAMPUS'
+  },
+  description: 'Club de plongée sous-marine à Sissonne (Aisne). Formations FFESSM, baptêmes, sorties en milieu naturel. Rejoignez l\'aventure sous-marine.',
+  keywords: ['plongée', 'club plongée Sissonne', 'FFESSM', 'baptême plongée', 'formation plongée', 'Hippocampus', 'plongée Aisne', 'plongée Hauts-de-France'],
+  authors: [{ name: 'HIPPOCAMPUS Diving Club' }],
+  icons: {
+    icon: '/assets/photos/logo-cyan.png',
+    apple: '/assets/photos/logo-cyan.png',
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'fr_FR',
+    siteName: 'HIPPOCAMPUS',
+    title: 'HIPPOCAMPUS | Club de Plongée — Sissonne',
+    description: 'Club de plongée sous-marine à Sissonne (Aisne). Formations FFESSM du baptême au niveau 3.',
+    images: [{ url: '/assets/photos/logo-cyan.png', width: 2048, height: 2048 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'HIPPOCAMPUS | Club de Plongée — Sissonne',
+    description: 'Plongez avec Hippocampus, club FFESSM à Sissonne.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html
+      lang="fr"
+      className={`${notoSerif.variable} ${manrope.variable} min-h-dvh antialiased`}
+    >
+      <body className="min-h-full flex flex-col bg-surface text-on-surface font-body">
+        {/* Skip-to-content link — visible on focus for keyboard users */}
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-primary focus:text-on-primary focus:px-4 focus:py-2 focus:rounded-lg focus:text-sm focus:font-bold focus:uppercase focus:tracking-widest"
+        >
+          Aller au contenu principal
+        </a>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "SportsClub",
+              "name": "HIPPOCAMPUS",
+              "description": "Club de plongée sous-marine affilié FFESSM à Sissonne",
+              "url": "https://hippocampus-plongee.fr",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Rue de la Gare",
+                "addressLocality": "Sissonne",
+                "postalCode": "02150",
+                "addressCountry": "FR"
+              },
+              "sport": "Scuba Diving",
+              "memberOf": {
+                "@type": "Organization",
+                "name": "FFESSM",
+                "url": "https://ffessm.fr"
+              }
+            })
+          }}
+        />
+        <WaterBackground />
+        <Navbar />
+        <main id="main-content" className="relative z-10 flex-1 pt-24">{children}</main>
+        <Footer />
+      </body>
+    </html>
+  );
+}
