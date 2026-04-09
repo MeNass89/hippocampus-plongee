@@ -42,45 +42,22 @@ export default async function Image() {
           justifyContent: "center",
           position: "relative",
           overflow: "hidden",
-          background: "#040E1A",
+          backgroundImage: `url(${frameBase64})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundColor: "#040E1A",
         }}
       >
-        {/* First frame of scroll video as background */}
-        <img
-          src={frameBase64}
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-          }}
-        />
-
         {/* Dark overlay to ensure text readability */}
         <div
           style={{
             position: "absolute",
             top: 0,
             left: 0,
-            width: "100%",
-            height: "100%",
+            right: 0,
+            bottom: 0,
             background:
-              "linear-gradient(180deg, rgba(4,14,26,0.55) 0%, rgba(4,14,26,0.7) 50%, rgba(4,14,26,0.85) 100%)",
-          }}
-        />
-
-        {/* Radial vignette */}
-        <div
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            background:
-              "radial-gradient(ellipse 70% 65% at center, transparent 30%, rgba(4,14,26,0.8) 100%)",
+              "linear-gradient(180deg, rgba(4,14,26,0.45) 0%, rgba(4,14,26,0.6) 50%, rgba(4,14,26,0.75) 100%)",
           }}
         />
 
