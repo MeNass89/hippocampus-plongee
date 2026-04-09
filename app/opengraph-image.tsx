@@ -7,12 +7,12 @@ export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 export default async function Image() {
-  const [logoBuffer, posterBuffer] = await Promise.all([
+  const [logoBuffer, frameBuffer] = await Promise.all([
     readFile(join(process.cwd(), "public/assets/photos/logo-cyan.png")),
-    readFile(join(process.cwd(), "public/assets/video/hero-poster.jpeg")),
+    readFile(join(process.cwd(), "public/assets/video/frames/frame_001.jpg")),
   ]);
   const logoBase64 = `data:image/png;base64,${logoBuffer.toString("base64")}`;
-  const posterBase64 = `data:image/jpeg;base64,${posterBuffer.toString("base64")}`;
+  const frameBase64 = `data:image/jpeg;base64,${frameBuffer.toString("base64")}`;
 
   // Helper: fetch font file URL from Google Fonts CSS
   async function loadGoogleFont(family: string, weight: number): Promise<ArrayBuffer> {
@@ -45,9 +45,9 @@ export default async function Image() {
           background: "#040E1A",
         }}
       >
-        {/* Hero poster as background */}
+        {/* First frame of scroll video as background */}
         <img
-          src={posterBase64}
+          src={frameBase64}
           style={{
             position: "absolute",
             top: 0,
