@@ -103,6 +103,8 @@ function TextPanel({
           <img
             src="/assets/photos/logo-cyan.webp"
             alt=""
+            width={420}
+            height={420}
             className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[280px] md:h-[360px] lg:h-[420px] w-auto opacity-[0.15] pointer-events-none select-none"
             aria-hidden="true"
           />
@@ -176,9 +178,9 @@ function TextPanel({
         )}
 
         {/* Heading */}
-        <h1 className="mt-6 font-headline text-4xl font-bold leading-[1.05] tracking-[-0.03em] text-on-surface md:text-6xl lg:text-7xl">
+        <h2 className="mt-6 font-headline text-4xl font-bold leading-[1.05] tracking-[-0.03em] text-on-surface md:text-6xl lg:text-7xl">
           {panel.heading}
-        </h1>
+        </h2>
 
         {/* Body text */}
         {panel.body && (

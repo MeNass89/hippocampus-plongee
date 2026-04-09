@@ -2,9 +2,9 @@ import Link from "next/link";
 
 const FOOTER_NAV = [
   { label: "Le Club", href: "/le-club" },
-  { label: "Activités", href: "/activites" },
-  { label: "Partenaires", href: "/partenaires" },
-  { label: "FAQ", href: "/faq" },
+  { label: "Formations", href: "/#formations" },
+  { label: "Agenda", href: "/#agenda" },
+  { label: "Contact", href: "/le-club#contact" },
 ] as const;
 
 export default function Footer() {
@@ -77,7 +77,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-on-surface/[0.06] pt-12 mt-16 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-[10px] text-on-surface/40 uppercase tracking-widest">
-            © 2026 HIPPOCAMPUS — Club de Plongée Sous-Marine. Affilié FFESSM.
+            &copy; {new Date().getFullYear()} HIPPOCAMPUS — Club de Plong&eacute;e Sous-Marine. Affili&eacute; FFESSM.
           </p>
           <div className="flex gap-6">
             <Link

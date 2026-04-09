@@ -71,7 +71,7 @@ export function Formations() {
 
           <ScrollReveal animation="fade-up" delay={100}>
             <p className="text-on-surface-variant font-light leading-relaxed mb-10 max-w-xl">
-              Du premier souffle sous l'eau aux expéditions techniques les
+              Du premier souffle sous l&apos;eau aux exp&eacute;ditions techniques les
               plus exigeantes, nos encadrants diplômés vous
               accompagnent à chaque étape de votre progression.
             </p>

@@ -77,28 +77,28 @@ export function ScrollReveal({
 }: ScrollRevealProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [revealed, setRevealed] = useState(false);
-  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(() => {
+    if (typeof window === "undefined") return false;
+    return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  });
   const [transitionDone, setTransitionDone] = useState(false);
 
   useEffect(() => {
     const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
-    setPrefersReducedMotion(mq.matches);
-
     const handler = (e: MediaQueryListEvent) => setPrefersReducedMotion(e.matches);
     mq.addEventListener("change", handler);
     return () => mq.removeEventListener("change", handler);
   }, []);
 
+  // When reduced motion is preferred, treat as already revealed
+  const effectiveRevealed = prefersReducedMotion || revealed;
+  const effectiveTransitionDone = prefersReducedMotion || transitionDone;
+
   useEffect(() => {
+    if (prefersReducedMotion) return;
+
     const el = ref.current;
     if (!el) return;
-
-    // If user prefers reduced motion, reveal immediately
-    if (prefersReducedMotion) {
-      setRevealed(true);
-      setTransitionDone(true);
-      return;
-    }
 
     observeElement(el, (entry) => {
       if (entry.isIntersecting) {
@@ -119,7 +119,7 @@ export function ScrollReveal({
 
   const initial = INITIAL_STYLES[animation];
   const target = REVEALED_STYLES[animation];
-  const current = revealed ? target : initial;
+  const current = effectiveRevealed ? target : initial;
 
   // Skip animation entirely for reduced motion
   if (prefersReducedMotion) {
@@ -139,7 +139,7 @@ export function ScrollReveal({
         transform: current.transform,
         filter: current.filter,
         transition: `opacity 0.9s ${EASING.expo} ${delay}ms, transform 0.9s ${EASING.expo} ${delay}ms, filter 0.9s ${EASING.expo} ${delay}ms`,
-        willChange: transitionDone ? "auto" : "opacity, transform, filter",
+        willChange: effectiveTransitionDone ? "auto" : "opacity, transform, filter",
       }}
       onTransitionEnd={handleTransitionEnd}
     >

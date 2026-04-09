@@ -39,6 +39,7 @@ export const metadata: Metadata = {
     siteName: 'HIPPOCAMPUS',
     title: 'HIPPOCAMPUS | Club de Plongée — Sissonne',
     description: 'Club de plongée sous-marine à Sissonne (Aisne). Formations FFESSM du baptême au niveau 3.',
+    // TODO: Replace with a proper 1200x630 social preview card image instead of the logo
     images: [{ url: '/assets/photos/logo-cyan.png', width: 2048, height: 2048 }],
   },
   twitter: {

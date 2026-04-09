@@ -64,7 +64,7 @@ export function Values() {
 
                   {/* Number + Title */}
                   <div className="md:col-span-3">
-                    <p className="font-headline text-xl text-on-surface/25 mb-1">
+                    <p className="font-headline text-xl text-on-surface/40 mb-1">
                       {value.number}
                     </p>
                     <h3 className="font-headline text-2xl font-light tracking-tight text-on-surface md:text-3xl">
@@ -99,9 +99,9 @@ export function Values() {
                 Prêt à plonger ?
               </h3>
               <p className="text-on-surface-variant font-light mb-8 max-w-md mx-auto">
-                Rejoignez l'équipage et découvrez un nouveau monde.
+                Rejoignez l&apos;&eacute;quipage et d&eacute;couvrez un nouveau monde.
               </p>
-              <Button variant="primary" href="/contact" magnetic={true} size="lg">
+              <Button variant="primary" href="/le-club#contact" magnetic={true} size="lg">
                 Nous contacter
               </Button>
             </div>

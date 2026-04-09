@@ -31,7 +31,8 @@ export default function Navbar() {
   /* ── Intersection Observer for section anchors ── */
   useEffect(() => {
     if (pathname !== "/") {
-      setActiveSection(null);
+      // Use a microtask to avoid synchronous setState in effect body
+      queueMicrotask(() => setActiveSection(null));
       return;
     }
 

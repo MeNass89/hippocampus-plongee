@@ -7,6 +7,7 @@ import {
   useRef,
   useCallback,
 } from "react";
+import Link from "next/link";
 
 interface ButtonBaseProps {
   children: ReactNode;
@@ -91,6 +92,23 @@ export function Button({
   ].join(" ");
 
   if (href) {
+    const isInternal = href.startsWith("/") || href.startsWith("#");
+
+    if (isInternal) {
+      return (
+        <Link
+          ref={ref as React.Ref<HTMLAnchorElement>}
+          href={href}
+          className={classes}
+          onMouseMove={handleMouseMove}
+          onMouseLeave={handleMouseLeave}
+          {...(rest as AnchorHTMLAttributes<HTMLAnchorElement>)}
+        >
+          {children}
+        </Link>
+      );
+    }
+
     return (
       <a
         ref={ref as React.Ref<HTMLAnchorElement>}

@@ -57,7 +57,7 @@ export function Pricing() {
                 </ul>
 
                 {/* CTA */}
-                <Button variant="primary" href="/contact" magnetic={true} className="text-center w-full">
+                <Button variant="primary" href="/le-club#contact" magnetic={true} className="text-center w-full">
                   Nous contacter
                 </Button>
               </div>
@@ -92,7 +92,7 @@ export function Pricing() {
                 </ul>
 
                 {/* CTA */}
-                <Button variant="primary" href="/contact" magnetic={true} className="text-center w-full">
+                <Button variant="primary" href="/le-club#contact" magnetic={true} className="text-center w-full">
                   Nous contacter
                 </Button>
               </div>

@@ -30,7 +30,7 @@ export function CTASection() {
                 premi&egrave;re bulle ou de votre centi&egrave;me &eacute;pave, Hippocampus vous attend.
               </p>
 
-              <Button href="/contact" size="lg" magnetic={true}>
+              <Button href="/le-club#contact" size="lg" magnetic={true}>
                 Devenir Membre
               </Button>
             </div>

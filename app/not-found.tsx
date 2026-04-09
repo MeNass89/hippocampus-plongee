@@ -18,7 +18,10 @@ export default function NotFound() {
         <img
           src="/assets/photos/logo-cyan.png"
           alt=""
+          width={112}
+          height={112}
           className="mx-auto h-28 w-auto mb-10 opacity-40"
+          aria-hidden="true"
         />
         <p className="font-headline text-8xl md:text-9xl font-bold text-primary/20 tracking-[-0.04em] mb-4">
           404

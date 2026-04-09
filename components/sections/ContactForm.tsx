@@ -28,12 +28,14 @@ function InputField({
 }) {
   return (
     <div className={`relative ${className}`}>
+      <label htmlFor={id} className="sr-only">{label}</label>
       <input
         id={id}
         name={id}
         type={type}
         required={required}
         placeholder={label}
+        aria-label={label}
         className="peer w-full bg-transparent border-0 border-b border-on-surface/[0.06] py-4 px-0 text-on-surface placeholder:text-on-surface-variant/30 focus:ring-0 focus:outline-none transition-colors duration-500 ease-expo focus:border-primary"
       />
       {/* Animated underline */}
@@ -57,11 +59,13 @@ function SelectField({
 }) {
   return (
     <div className={`relative ${className}`}>
+      <label htmlFor={id} className="sr-only">{label}</label>
       <select
         id={id}
         name={id}
         required={required}
         defaultValue=""
+        aria-label={label}
         className="peer w-full bg-transparent border-0 border-b border-on-surface/[0.06] py-4 px-0 text-on-surface focus:ring-0 focus:outline-none appearance-none cursor-pointer transition-colors duration-500 ease-expo focus:border-primary [&:invalid]:text-on-surface-variant/30"
       >
         <option value="" disabled className="text-on-surface-variant/30 bg-surface-container">
@@ -96,12 +100,14 @@ function TextareaField({
 }) {
   return (
     <div className="relative">
+      <label htmlFor={id} className="sr-only">{label}</label>
       <textarea
         id={id}
         name={id}
         rows={rows}
         required={required}
         placeholder={label}
+        aria-label={label}
         className="peer w-full bg-transparent border-0 border-b border-on-surface/[0.06] py-4 px-0 text-on-surface placeholder:text-on-surface-variant/30 focus:ring-0 focus:outline-none resize-none transition-colors duration-500 ease-expo focus:border-primary"
       />
       {/* Animated underline */}
@@ -153,6 +159,11 @@ export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
 
+  /**
+   * PLACEHOLDER: No backend/API route is connected yet.
+   * Opens the user's mail client with the form data as a mailto: fallback.
+   * TODO: Replace with a proper API route (e.g. /api/contact) or third-party service.
+   */
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = e.currentTarget;
@@ -160,6 +171,20 @@ export function ContactForm() {
       form.reportValidity();
       return;
     }
+
+    const formData = new FormData(form);
+    const name = formData.get("fullname") as string;
+    const email = formData.get("email") as string;
+    const subject = formData.get("subject") as string;
+    const message = formData.get("message") as string;
+
+    const mailtoSubject = encodeURIComponent(`[Hippocampus] ${subject}`);
+    const mailtoBody = encodeURIComponent(
+      `Nom: ${name}\nEmail: ${email}\nSujet: ${subject}\n\n${message}`
+    );
+
+    window.location.href = `mailto:contact@hippocampus-plongee.fr?subject=${mailtoSubject}&body=${mailtoBody}`;
+
     setSubmitting(true);
     setTimeout(() => {
       setSubmitting(false);
@@ -185,11 +210,11 @@ export function ContactForm() {
                 <div className="flex flex-col items-center justify-center py-16 gap-4">
                   <span className="text-primary text-5xl">&#10003;</span>
                   <p className="font-headline text-xl text-on-surface">
-                    Message transmis avec succ&egrave;s.
+                    Votre client mail a &eacute;t&eacute; ouvert.
                   </p>
                   <p className="text-sm text-on-surface-variant font-light">
-                    Nous remontons &agrave; la surface pour vous r&eacute;pondre
-                    sous 48h.
+                    Envoyez le message depuis votre bo&icirc;te mail.
+                    Nous vous r&eacute;pondrons sous 48h.
                   </p>
                   <button
                     type="button"
