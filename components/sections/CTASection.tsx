@@ -21,8 +21,7 @@ export function CTASection() {
               }}
             >
               <blockquote className="font-headline text-3xl md:text-4xl lg:text-5xl font-bold italic text-on-surface leading-tight mb-8 tracking-[-0.02em] max-w-2xl mx-auto">
-                &laquo;&nbsp;La mer n&apos;est pas un obstacle, c&apos;est un
-                chemin.&nbsp;&raquo;
+                &laquo;&nbsp;La mer est le vaste r&eacute;servoir de la nature. La mer donnera &agrave; chaque homme des raisons de r&ecirc;ver.&nbsp;&raquo;
               </blockquote>
 
               <p className="text-on-surface-variant font-light text-lg md:text-xl leading-relaxed mb-12 max-w-2xl mx-auto">

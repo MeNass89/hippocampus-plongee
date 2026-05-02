@@ -23,6 +23,20 @@ const INSTRUCTORS: TeamMember[] = [
       "Chaque plong\u00e9e est une occasion d\u2019observer un \u00e9cosyst\u00e8me vivant. La biologie marine commence d\u00e8s le masque pos\u00e9.",
     gradient: "linear-gradient(160deg, #061422 0%, #0a2540 50%, #005354 140%)",
   },
+  {
+    name: "José",
+    role: "Membre",
+    quote:
+      "Sous l’eau, on apprend à faire confiance à son binôme autant qu’à soi-même.",
+    gradient: "linear-gradient(160deg, #0a2540 0%, #0d2f4f 50%, #006b6e 140%)",
+  },
+  {
+    name: "Cédric",
+    role: "Membre",
+    quote:
+      "La mer nous rappelle chaque jour que l’humilité est la première qualité d’un plongeur.",
+    gradient: "linear-gradient(160deg, #061422 0%, #0a2540 50%, #004d4f 140%)",
+  },
 ];
 
 export function Team() {

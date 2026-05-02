@@ -25,13 +25,13 @@ export function Philosophy() {
                 l&apos;apesanteur, &agrave; la contemplation d&apos;un monde que seuls les initi&eacute;s
                 connaissent. Nos moniteurs, brevet&eacute;s d&apos;&Eacute;tat et form&eacute;s depuis
                 des ann&eacute;es, transmettent bien plus qu&apos;une technique : une
-                philosophie du respect des profondeurs.
+                philosophie du respect des profondeurs et de la biodiversit&eacute; marine.
               </p>
 
               <p className="text-on-surface-variant font-light leading-relaxed mb-10 max-w-prose">
                 La s&eacute;curit&eacute; n&apos;est jamais un frein &agrave; l&apos;&eacute;merveillement. Au contraire,
                 c&apos;est elle qui lib&egrave;re : ma&icirc;triser ses paliers, conna&icirc;tre ses
-                limites, comprendre la mer — voil&agrave; ce qui transforme un plongeur
+                limites, comprendre et respecter la mer — voil&agrave; ce qui transforme un plongeur
                 en explorateur. Depuis 2010, cette exigence guide chacune de nos
                 formations, chacune de nos sorties.
               </p>

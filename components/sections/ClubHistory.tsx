@@ -36,7 +36,7 @@ export function ClubHistory() {
 
               <p className="text-on-surface-variant font-light leading-relaxed mb-6 max-w-[55ch]">
                 Fond&eacute; par Vivien Dambreville, Moniteur F&eacute;d&eacute;ral titulaire du
-                BEES2 &mdash; la plus haute certification d&apos;enseignement de la
+                E3 &mdash; la plus haute certification d&apos;enseignement de la
                 plong&eacute;e en France &mdash;, le club Hippocampus propose un programme
                 complet&nbsp;: entra&icirc;nements hebdomadaires en piscine, plong&eacute;es en
                 milieu naturel et voyages de plong&eacute;e &agrave; l&apos;international.
